@@ -186,6 +186,15 @@ fun main() {
             println("kkkkkk")
         }
     }
+    //Listas 
+    //                        0         1         2           3
+    val profs = arrayListOf("Raul", "kaory","Luiz Gustavo","David")
+
+    //imprimir a lista
+    println(profs) 
+
+    //imprimir por elemento
+    println(profs[0])
     
 }
 
