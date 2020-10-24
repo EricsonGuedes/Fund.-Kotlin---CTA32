@@ -167,6 +167,73 @@ fun main() {
   // Operador Não ou NOT: !
   println(!false) // true
   println(!true) // false
+	
+//Condicionais
+// Situação 1: Aviso
+	// Estrutura condiconal: if/else
+	
+    val idade = 16
+    
+   // Estrutura if: if (condição) { Código } 
+   println("Pessoa entrando no bar...")
+   
+   if (idade < 18) {
+       println("Você não poderá pedir bebidas alcoólicas")
+   }
+   
+   println("Bem-vindo ao bar do Raul")
+    
+
+
+// Situação 2: Rejeito
+	// Estrutura condiconal: if/else
+	
+    val idade = 40
+    
+   // Estrutura if/else: if (condição) { Código } else { Código alternativo } 
+   println("Pessoa entrando no bar...")
+   
+   if (idade < 18) {
+       println("Você não pode entrar no bar")
+   }
+   else {
+       println("Bem-vindo ao bar do Raul")
+   }
+    
+
+
+// Situação 3: Faixa de clientes
+	// Estrutura condiconal: if/else
+	
+    val idade = 40
+    
+   println("Pessoa entrando no bar...")
+   
+   if (idade >= 18) { // Primeira condição
+       println("Bem-vindo ao bar do Raul")
+   }
+   else if (idade > 14) { // Segunda condição (Já sabemos que idade < 18)
+       println("Você não poderá pedir bebidas alcoólicas")
+       println("Bem-vindo ao bar do Raul")
+   }
+   else {
+       println("Você não pode entrar no bar")
+   }
+   
+   // ...
+   
+    val idade = 40
+    val cnh = true
+    
+    if (idade >= 18 && cnh) {
+        println("Pode comprar um carro")
+    }
+    else if (idade < 18 && cnh) {
+        println("Você é um hacker, vamos chamar a polícia")
+    }
+    else {
+        println("Não pode comprar um carro")
+    }
 
 // Estrutura de repetição: for
 
