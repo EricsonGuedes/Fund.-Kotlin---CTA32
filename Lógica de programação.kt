@@ -186,16 +186,37 @@ fun main() {
             println("kkkkkk")
         }
     }
-    //Listas 
-    //                        0         1         2           3
-    val profs = arrayListOf("Raul", "kaory","Luiz Gustavo","David")
+	//Listas 
+	//                        0         1         2           3
+	val profs = arrayListOf("Raul", "kaory","Luiz Gustavo","David")
 
-    //imprimir a lista
-    println(profs) 
+	//imprimir a lista
+	println(profs) 
 
-    //imprimir por elemento
-    println(profs[0])
-    
+	//imprimir por elemento
+	println(profs[0])
+
+	//obtendo o tamanho da lista
+	println(profs.size)
+
+	//Exibir o ultimo elemento
+	println(profs.size-1)
+
+	//Adicionando um novo item na lista
+	profs.add("Joshua")
+	println(profs)
+
+	//remover item da lista
+	profs.removeAt(profs.size-1)
+	println(profs)
+
+	//Obtendo um item aleatóio da lista
+	println(profs.random())
+
+	//Interando sobre os itens da lista]
+	for (professor in profs)
+	println("Olá $professor, Tenho uma dúvida")
+
 }
 
 //Declarando funções
